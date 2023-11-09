@@ -3,6 +3,7 @@ Application displaying character profiles from Rick & Morty using the Rick & Mor
 
 Built using React.js and Emotion library. 
 
+Video - https://www.dropbox.com/scl/fi/vjeanxf8xne5v21cc261j/ricknmorty.webm?rlkey=jsv4j02rwwxhtuiis7cgpd300&dl=0
 ## Installation
 
 Clone the project:
