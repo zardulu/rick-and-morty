@@ -22,21 +22,22 @@ const imageStyle = css`
 const columnStyle = css`
   flex: 1; 
   min-width: 300px;
-  border: 1px solid #39FF14; 
+  border: 1px solid #2B1F31;
   border-radius: 10px;
   padding: 16px;
   margin: 8px;
   box-sizing: border-box; 
+  background-color: #A6FF96;
 `;
 
 const columnHeadingStyle = css`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 8px;
-  color: white;
+  color: #032D3C;
 `;
 
 const bodyTextStyle = css`
-  color: white;
+  color: #032D3C;
 `
 // Renders the profile page for individual character
 function CharacterProfile({ characterId }) {
@@ -100,7 +101,7 @@ function CharacterProfile({ characterId }) {
         <p css={bodyTextStyle}>Gender: {character.gender}</p>
         
         {/* Origin Location details */}
-        <h3 css={columnHeadingStyle}>Origin Location</h3>
+        <h3>Origin Location - </h3>
         {originLocation && 
           <div css={bodyTextStyle}>
             <p>Name: {originLocation.name}</p>
@@ -110,7 +111,7 @@ function CharacterProfile({ characterId }) {
         }
         
         {/* Current Location details */}
-        <h3 css={columnHeadingStyle}>Current Location</h3>
+        <h3>Current Location - </h3>
         {currentLocation &&
           <div css={bodyTextStyle} >
             <p>Name: {currentLocation.name}</p>

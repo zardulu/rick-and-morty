@@ -10,11 +10,11 @@ const linkStyle = css`
 
 // Define the styles for the Pagination buttons
 const buttonStyles = css`
-  background-color: black; 
-  border: 1px solid #39FF14;
+  background-color: #A6FF96; 
+  border: 1px inset #000000;
   border-radius: 5px;
-  padding: 5px 10px;
-  color: #39FF14;
+  padding: 8px 13px;
+  color: #032D3C;
 `;
 
 // More pagination styles
@@ -42,11 +42,12 @@ const filterStyle = css`
 // Define the styles for the dropdown buttons
 const selectStyle = css`
   font-size: 18px;
-  background-color: black;
-  color: #39FF14;
+  background-color: #A6FF96;
+  color: #032D3C;
   border: 1px solid ;
   border-radius: 5px;  
-  margin: 5px;
+  margin: 8px;
+  padding: 5px;
 `;
 
 function CharacterList({ characters, itemsPerPage, currentPage, onPageChange, onCharacterSelect }) {
@@ -157,7 +158,7 @@ function CharacterList({ characters, itemsPerPage, currentPage, onPageChange, on
       <div css={filterStyle}>
       <input css={selectStyle}
         type="text"
-        placeholder="Search by name"
+        placeholder="Search by name..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
